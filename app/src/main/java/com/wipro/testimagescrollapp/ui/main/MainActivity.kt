@@ -99,6 +99,7 @@ class MainActivity : BaseActivity() {
                     val totalItemCount = mLayoutManager.itemCount
                     val firstVisibleItemPosition = mLayoutManager.findFirstVisibleItemPosition()
 
+
                     if (!viewModel.isLoading && !viewModel.isLastPage) {
                         if (visibleItemCount + firstVisibleItemPosition >= totalItemCount
                             && firstVisibleItemPosition >= 0 && dy >= 0
